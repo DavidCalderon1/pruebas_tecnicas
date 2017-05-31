@@ -10,11 +10,11 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-/*
-Route::get('/', function () {
+
+Route::get('welcome', function () {
     return view('welcome');
 });
-*/
+
 
 // direcciona al metodo 'index' del controlador HomeController
 Route::get('/',['as' => 'inicio','uses' => 'HomeController@index']);
